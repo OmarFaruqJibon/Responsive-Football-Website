@@ -10,7 +10,9 @@ body{
     width: 50%;
     padding-left: 5%;
 }
-
+section{
+    margin-bottom: 160px;
+}
 
 
 /*-----------
@@ -18,9 +20,11 @@ body{
  ----------- */
 .header-wrapper{
     background-color: #2D25A0;
+    width: 100%;
     display: flex;
     padding-top: 67px;
     padding-bottom: 86px;
+    margin-bottom: 70px;
 }
 .header-wrapper .header-left{
     padding-left: 125px;
@@ -35,7 +39,7 @@ body{
     color: #FFFFFF;
     margin-bottom: 27px;
 }
-.header-wrapper .header-left button{
+.okay-button{
     background-color: #E02C6D;
     color: #FFFFFF;
     width: 168px;
@@ -69,9 +73,73 @@ body{
 /*-----------
     main styles
  ----------- */
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+    
+}
+.players-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+.player-detail{
+    width: 300px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-bottom: 27px;
+}
+.player-photo img{
+    width: 100%;
+    /* height: 256px; */
+}
+.player-info .player-title{
+    color: #18191F;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 10px 0px;
+}
+.player-info p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 10px 0px;
+}
 
 
 
+
+
+
+.highlight-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 66px;
+}
+
+.highlight-left-part h2{
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 60px;
+    color: #0A0826;
+    margin: 8px 0px;
+}
+.highlight-left-part p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin: 8px 0px;
+}
+.highlight-right-part img{
+    width: 567px;
+    height: 427px;
+}
 
 
 
@@ -100,3 +168,31 @@ body{
 /*-----------
     footer styles
  ----------- */
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 63px;
+}
+.footer-top img{
+    width: 470px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+.social-icons i{
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px 14px;
+    color: #969BAB;
+    background-color: #0b0d1717;
+    border-radius: 50%;
+    line-height: 1.7;
+}
+.copyright{
+    font-size: 18px;
+    margin: 20px 0px;
+    color: #000000;
+}
