@@ -6,26 +6,15 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-/* .half-width{
-    width: 50%;
-    padding-left: 5%;
-} */
-section{
-    margin-bottom: 130px;
-}
 
+section{
+    margin-bottom: 100px;
+}
 
 /*-----------
     header styles
  ----------- */
-/* .header-wrapper{
-    background-color: #2D25A0;
-    width: 100%;
-    display: flex;
-    padding-top: 67px;
-    padding-bottom: 86px;
-    margin-bottom: 70px;
-} */
+
 .header-wrapper{
     background-color: #2D25A0;
     width: 100%;
@@ -122,32 +111,6 @@ section{
 }
 
 
-/* highlight area style */
-
-.highlight-area{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 66px;
-}
-
-.highlight-left-part h2{
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 60px;
-    color: #0A0826;
-    margin: 8px 0px;
-}
-.highlight-left-part p{
-    font-size: 14px;
-    line-height: 28px;
-    color: #6C6C6C;
-    margin: 8px 0px;
-}
-.highlight-right-part img{
-    width: 567px;
-    height: 427px;
-}
-
 /* result area style */
 
 .result-area{
@@ -209,15 +172,6 @@ section{
 }
 
 
-
-
-
-
-
-
-
-
-
 /*-----------
     footer styles
  ----------- */
@@ -258,6 +212,7 @@ section{
 
 @media only screen and (max-width:688px){
     body {
+        overflow-x: hidden;
     }
     .container{
         width: 100%; 
@@ -265,7 +220,7 @@ section{
     section{
         margin-bottom: 60px;
     }
-    .header-wrapper, .players-gallery, .highlight-area, .latest-news{
+    .header-wrapper, .players-gallery, .latest-news{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
@@ -275,28 +230,18 @@ section{
         padding-left: 16px;
     }
     .header-wrapper .header-left h1{
-        font-size: 36px;
-        line-height: 50px;
+        font-size: 32px;
+        line-height: 47px;
     }
     .header-wrapper .header-right img{
         margin-top: 49px;
         /* padding: 10px; */
-        width: 350px;
-        height: auto;
+        width: 339px;
+        height: 259px;
     }
-    .highlight-area{
-        grid-row-gap: 30px;
-    }
-    .highlight-left-part{
-
-    }
-    .highlight-left-part h2{
-        font-size: 30px;
-        line-height: 40px;
-    }
-    .highlight-right-part img{
-        width: 328px;
-        height: 248px;
+    
+    .scores {
+        justify-content: space-around;
     }
     .news{
         margin-bottom: 24px;
