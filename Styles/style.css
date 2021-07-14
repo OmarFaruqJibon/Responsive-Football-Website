@@ -249,3 +249,67 @@ section{
     margin: 20px 0px;
     color: #000000;
 }
+
+
+
+/*-----------------
+ Media Query 
+ ----------------*/
+
+@media only screen and (max-width:688px){
+    body {
+    }
+    .container{
+        width: 100%; 
+    }
+    section{
+        margin-bottom: 60px;
+    }
+    .header-wrapper, .players-gallery, .highlight-area, .latest-news{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .header-wrapper .header-left {
+        padding-left: 16px;
+    }
+    .header-wrapper .header-left h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .header-wrapper .header-right img{
+        margin-top: 49px;
+        /* padding: 10px; */
+        width: 350px;
+        height: auto;
+    }
+    .highlight-area{
+        grid-row-gap: 30px;
+    }
+    .highlight-left-part{
+
+    }
+    .highlight-left-part h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlight-right-part img{
+        width: 328px;
+        height: 248px;
+    }
+    .news{
+        margin-bottom: 24px;
+    }
+    .footer-top img{
+        width: 300px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+  
+
+
+
+
+
+}
