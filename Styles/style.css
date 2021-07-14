@@ -6,10 +6,10 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
-.half-width{
+/* .half-width{
     width: 50%;
     padding-left: 5%;
-}
+} */
 section{
     margin-bottom: 130px;
 }
@@ -18,26 +18,34 @@ section{
 /*-----------
     header styles
  ----------- */
-.header-wrapper{
+/* .header-wrapper{
     background-color: #2D25A0;
     width: 100%;
     display: flex;
     padding-top: 67px;
     padding-bottom: 86px;
     margin-bottom: 70px;
+} */
+.header-wrapper{
+    background-color: #2D25A0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    padding-top: 67px;
+    padding-bottom: 86px;
+    margin-bottom: 70px;
+    
 }
 .header-wrapper .header-left{
-    padding-left: 125px;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
+    padding-left: 150px;
 }
 .header-wrapper .header-left h1{
     font-weight: bold;
-    font-size: 64px;
+    font-size: 60px;
     line-height: 80px;
     color: #FFFFFF;
-    margin-bottom: 27px;
+    margin-bottom: 15px;
 }
 .okay-button{
     background-color: #E02C6D;
@@ -46,7 +54,14 @@ section{
     height: 44px;
     border: none;
     font-size: 16px;
+    transition: transform 1s ease-in-out;
 }
+.okay-button:hover{
+    transform:scale(1.2);
+    color:bisque;
+    cursor: pointer;
+}
+
 .fas{
     padding-left: 5px;
 }
@@ -55,24 +70,19 @@ section{
 }
 .header-wrapper .header-right img{
     width: 556px;
-    height: 438px;  
+    height: 438px; 
+    transition: transform 1s ease-in-out; 
+}
+.header-right img:hover{
+    transform:scale(1.1) rotate(20deg);
+    cursor: pointer;
+    
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/*-----------
+/*---------------
     main styles
- ----------- */
+ ------------------ */
  main{
     display: flex;
     flex-direction: column;
@@ -80,12 +90,12 @@ section{
 }
 .container{
     width: 1050px;
-    
 }
 .players-gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
+    
 }
 .player-detail{
     width: 300px;
@@ -97,7 +107,6 @@ section{
 }
 .player-photo img{
     width: 100%;
-    /* height: 256px; */
 }
 .player-info .player-title{
     color: #18191F;
@@ -113,9 +122,7 @@ section{
 }
 
 
-
-
-
+/* highlight area style */
 
 .highlight-area{
     display: grid;
@@ -141,8 +148,7 @@ section{
     height: 427px;
 }
 
-
-
+/* result area style */
 
 .result-area{
     display: flex;
@@ -157,13 +163,14 @@ section{
 .result-title h2{
     color: #18191F;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 35px;
     border-bottom: 5px solid #2D25A0;;
     margin-bottom: 0px;
+    border-bottom-width: 3px;
 }
 .result-title h4{
     color: #18191F;
-    font-size: 16px;
+    font-size: 18px;
 }
 .scores{
     display:flex;
@@ -180,16 +187,15 @@ section{
     border-radius: 5px;
 }
 
-
-
+/* Latest news area start */
 
 .latest-news{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
 }
-.news-area-title{
-
+.news-area-title {
+    font-size: 35px;
 }
 .news{
     width: 300px;
